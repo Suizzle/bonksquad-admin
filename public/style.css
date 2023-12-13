@@ -20,11 +20,17 @@ body {
 p {
   display: block;
 }
-input {
+input, select, option {
   margin:10px;
   padding: 5px;
   border-radius: 2px;
   color: #333!important;
+  display: block;
+}
+label {
+  display: block;
+  font-weight: bolder;
+  text-align: center;
 }
 
 
