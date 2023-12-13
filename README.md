@@ -1,7 +1,3 @@
-# Bitcoinships
+# BONK Squad Admin
 
-A peer-to-peer monetized multiplayer online Battleship game
-
-I am hereby donating this code to the BSV community and beyond. 
-
-Feel free to fork it, modify it, do with it what you will.
+This is a client and server for admins so they can create games and supply prize pools and validate program interactions and social media activity via Twitter and Discord using Zealy API
