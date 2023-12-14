@@ -36,12 +36,12 @@ It includes
   * squad name <String, max chars 15>
   * squad logo <String - URI of logo> 
   * squad motto <String, max chars 30>
-  * all players in the squad <Vector<Player>>
+  * all players in the squad \<Vector\<Player>>
 
 * SquadList struct with fields for 
 
   * SquadList creator public key <Pubkey>
-  * all squads in list <Vector<Squad>>
+  * all squads in list \<Vector\<Squad>>
 
 * Methods for 
 
