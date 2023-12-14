@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap" rel="stylesheet">
     <script src="/socket.io/socket.io.js"></script>
     <script src="app.js" charset="utf-8"></script>
-    <script src="https://unpkg.com/@solana/web3.js@v1.33.0/lib/index.iife.js"></script>
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
   </head>
 
   <body>
@@ -38,6 +38,7 @@
   </body>
 
   <script>
+    console.log(solanaWeb3)
     var wallet;
     const lamports_per_sol = solanaWeb3.LAMPORTS_PER_SOL;
     function connectWallet() {
@@ -106,8 +107,7 @@
           });
           let trans = await setWalletTransaction(instruction, connection);
 
-          let signature = await signAndSendTransaction(
-            wallet,
+          let signature = await sendIt(
             trans,
             connection
           );
@@ -128,12 +128,13 @@
         return transaction;
       }
 
-      async function signAndSendTransaction(wallet, transaction, connection) {
+      async function sendIt(transaction, connection) {
         // Sign transaction, broadcast, and confirm
         const { signature } = await window.solana.signAndSendTransaction(
           transaction
         );
         await connection.confirmTransaction(signature);
+        console.log(signature);
         return signature;
       }
     }
