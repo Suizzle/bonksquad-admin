@@ -52,3 +52,26 @@ It includes
   * updating a player (player can change squad, admins and authorized programs can change player's score)
   * deleting a player (admin or player only)
 
+## TODOS LEFT FOR ME:
+
+* Onchain voting program
+  * Interpret results so players can get paid out... use Helius webhook? 
+* Twitter integration (Auth0)
+* Ideally pull data with Helius Webhooks
+* Create client side methods for
+  * Admin:
+    * Create games
+    * Manage game
+    * You know, maybe I should just use SOAR for this. That might make more sense. And then do some kind of CPI call to my main program?
+  * Player:
+    * Create squad
+    * Join squad
+    * Join game (onchain voting program)
+      * Pay a little BONK for prize pool (so, need a vault for that)
+      * Winner gets paid out at the end of the month
+      *     
+Maybe I should just have the onchain voting program use SOAR? I guess I could do a CPI call for that?
+
+That's probably more than enough for getting done by Sunday. 
+
+
