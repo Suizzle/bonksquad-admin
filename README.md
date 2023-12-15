@@ -74,4 +74,20 @@ Maybe I should just have the onchain voting program use SOAR? I guess I could do
 
 That's probably more than enough for getting done by Sunday. 
 
+Yeah I need to just focus on the voting game for now.
 
+So what do I need to do? I need to be able to do the vote and then return the result, ideally through the webhook.
+
+Okay, so I'll do the vote. No problem. Right? 
+
+The voting program is already live at B9EUJbE3DNXR3NxPULazqnVqKH9DUENhB4szirLzYpRd.
+
+Let me set up the webhook first. 
+
+I need to be able to return the URL and put it in a dropdown list.
+
+Then people need to be able to click and submit votes. 
+
+So first I need to be able to submit stuff from the front end.
+
+To see how this is going to work, I should set up the webhook first. 
